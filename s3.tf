@@ -51,7 +51,7 @@ resource "random_pet" "this" {
 }
 
 module "s3_bucket" {
-  source = "github.com/sanketkadge1/Terraform/tree/AWS/Modules/S3"
+  source = "git@github.com:sanketkadge1/Terraform//Modules/S3?ref=AWS"
 
   bucket = local.bucket_name
 
