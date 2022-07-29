@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  source  = "git@github.com:karthickkumars/terraform-aws-modules//ec2?ref=master"
+  source  = "git@github.com:sanketkadge1/Terraform//Modules/ec2?ref=AWS"
   
   name = "COP test"
 
