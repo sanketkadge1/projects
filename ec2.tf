@@ -9,7 +9,7 @@ module "ec2_instance" {
   key_name               = "kpCAIT"
   subnet_id              = "subnet-be7f88c4"
   availability_zone      = "us-east-2b"
-  
+  iam_instance_profile   = "iam:EMR_EC2_DefaultRole"
   tags = {
   Terraform   = "true"
   Environment = "dev"
