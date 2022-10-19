@@ -31,14 +31,7 @@ module "s3_bucket" {
   control_object_ownership = true
   object_ownership         = "BucketOwnerPreferred"
 
-
-
-}
-
-
-module "s3_bucket" {
-  source = "git@github.com:sanketkadge1/Terraform//Modules/S3?ref=AWS"
-
+  
   bucket = "democmtcop19102022"
 
   force_destroy       = true
@@ -59,10 +52,14 @@ module "s3_bucket" {
   restrict_public_buckets = true
   control_object_ownership = true
   object_ownership         = "BucketOwnerPreferred"
-
-
+  
+  
+  
 
 }
+
+
+
 
 
 
